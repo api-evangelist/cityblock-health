@@ -1,8 +1,24 @@
 aid: cityblock-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cityblock-health.png
 name: Cityblock Health
-description: Cityblock Health is a company surfaced as a portfolio company of general-catalyst, redpoint-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Cityblock Health is a value-based healthcare provider delivering relationship-based
+  primary care, behavioral and mental health support, social care services, urgent care, and
+  hospital-to-home transitions to underserved and Medicaid-eligible communities. Care is coordinated
+  by Community Health Partners who connect members with medical providers, therapists, clinical
+  pharmacists, and social resources. Cityblock operates clinics across nine states plus Washington,
+  D.C., working in partnership with health insurance plans. Backed by General Catalyst and Redpoint
+  Ventures. No public developer API surface was found at the time of enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/cityblock-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Value-Based Care
+- Medicaid
+- Primary Care
+- Mental Health
+- Care Coordination
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cityblock-health-domain-security.yml
 - type: Website
   url: https://www.cityblock.com/
+- type: Blog
+  url: https://cityblockhealth.medium.com/
+- type: PrivacyPolicy
+  url: https://www.cityblock.com/privacy
+- type: TermsOfService
+  url: https://www.cityblock.com/terms-of-use
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
